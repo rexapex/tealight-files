@@ -20,9 +20,7 @@ def branch(dir):
       move()
 
 def go():
-  
-  while True:
-    branch(0)
+  branch(0)
 
 
 go()
