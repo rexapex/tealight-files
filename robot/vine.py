@@ -15,8 +15,8 @@ def branch(dir):
       branch(-1)
     elif right_side():
       branch(1)
-    
-    move()
+    else
+      move()
 
 def go():
   
