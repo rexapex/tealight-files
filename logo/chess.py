@@ -13,7 +13,7 @@ def chessboard(edges, size):
       move(sqSize)
     turn(90)
     move(sqSize)
-    #turn(90)
+    turn(90)
 
 turn(-90)
 chessboard(12,75)
