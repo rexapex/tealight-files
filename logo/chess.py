@@ -9,8 +9,10 @@ def chessboard():
   sqSize = 8
   for i in range(0, 8):
     for j in range(0, 8):
-      square(sqSize);
+      square(sqSize)
       move(sqSize)
+    angle = 0
+   
     turn(90)
     move(sqSize)
     turn(90)
