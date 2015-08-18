@@ -9,7 +9,7 @@ from tealight.robot import (move,
 # Add your code here
 def go():
   while True:
-    if left_side:
+    if left_side() == False:
       move()
   
 go()
