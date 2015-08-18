@@ -14,6 +14,8 @@ def chessboard():
     turn(180)
     move(8 * sqSize)
     turn(-90)
+    move(8)
+    turn(-90)
     
 turn(-90)
 chessboard()
