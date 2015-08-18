@@ -12,9 +12,6 @@ def go():
     turn(1)
     if left_side:
       move()
-    
-    turn(-1)
-      
-  
+      turn(-1)
   
 go()
