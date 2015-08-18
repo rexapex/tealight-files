@@ -7,10 +7,10 @@ from tealight.robot import (move,
                             right_side)
 
 # Add your code here
-def go()
+def go():
   dir = 0
   
-  while look()
+  while look():
     move()
   
   
