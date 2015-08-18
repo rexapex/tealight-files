@@ -10,7 +10,7 @@ from tealight.robot import (move,
 def go():
   dir = 0
   
-  while left_side() == False:
+  while left_side() == True:
     move()
   
   
