@@ -15,7 +15,10 @@ def moveBy(spaces):
 
 def go():
   moveBy(3) 
-  
+  turn(-1)
+  while True:
+    move()
+    
   
   
 go()
