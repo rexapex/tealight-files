@@ -11,6 +11,8 @@ from tealight.robot import (move,
 def branch(dir):
   turn(dir)
   
+  n = 0
+  
   while n < 1111:
     if touch() == 'fruit':
       move()
