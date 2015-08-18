@@ -10,6 +10,6 @@ from tealight.robot import (move,
 def go():
   while True:
     if left_side() == False:
-      move()
-  
+      turn(1)
+    move()
 go()
