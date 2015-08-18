@@ -1,6 +1,6 @@
 from tealight.logo import move, turn
 
-# Draws the von Koch Snowflake curve
+
 
 def segment(scale, detail):
   
@@ -18,5 +18,5 @@ def segment(scale, detail):
 
 turn(90)
 move(-300)
-segment(600, 1)
+segment(600, 5)
 move(-300)
