@@ -8,19 +8,16 @@ from tealight.robot import (move,
 
 # Add your code here
 
-def branch(dir):
-  turn(dir)
-  
+def branch():
   while True:
     if touch():
       move()
     if left_side() == 'fruit':
-      branch(-1)
+      turn(-1)
     elif right_side() == 'fruit':
-      branch(1)
-
-def go():
-  branch(0)
+      turn(1)
 
 
-go()
+
+
+branch()
