@@ -10,8 +10,8 @@ from tealight.robot import (move,
 
 def branch(dir):
   turn(dir)
-  run = True
-  while run:
+  
+  while True:
     if left_side():
       branch(-1)
     elif right_side():
