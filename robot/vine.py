@@ -12,7 +12,8 @@ def branch(dir):
   turn(dir)
   
   while True:
-    move()
+    if touch() == 'fruit':
+      move()
     if left_side() == 'fruit':
       branch(-1)
     elif right_side() == 'fruit':
