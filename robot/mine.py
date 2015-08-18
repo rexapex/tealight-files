@@ -8,7 +8,7 @@ from tealight.robot import (move,
 
 # Add your code here
 def moveBy(spaces):
-  for i in range(0, spaces):
+  for i in range(0, spaces-1):
     move()
   
 
