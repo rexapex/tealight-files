@@ -8,8 +8,8 @@ def square(side):
 def chessboard(edges, size):
   for i in range(0, 8):
     for j in range(0, 8):
-      square(5);
-      move(5)
+      square(10);
+      move(10)
   turn(90)
 
 turn(-90)
