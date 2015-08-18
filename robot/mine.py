@@ -7,14 +7,14 @@ from tealight.robot import (move,
                             right_side)
 
 # Add your code here
-def move(spaces):
+def moveBy(spaces):
   for i in range(0, spaces):
     move()
   
 
 
 def go():
-  move(4) 
+  moveBy(4) 
   
   
   
