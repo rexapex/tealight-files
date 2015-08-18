@@ -18,7 +18,6 @@ def branch(dir):
     branch(-1)
   elif right_side() == 'fruit':
     branch(1)
-  else:
 
 def go():
   branch(0)
