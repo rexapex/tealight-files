@@ -12,7 +12,7 @@ def chessboard():
       square(sqSize)
       move(sqSize)
     angle = 90
-    if(i % 2 == 1)
+    if i % 2 == 1:
       angle *= -1
     turn(angle)
     move(sqSize)
