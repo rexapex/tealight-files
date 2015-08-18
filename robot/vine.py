@@ -11,14 +11,14 @@ from tealight.robot import (move,
 def branch(dir):
   turn(dir)
   
-    if touch() == 'fruit':
-      while touch() == 'fruit':
-        move()
-    elif left_side() == 'fruit':
-      branch(-1)
-    elif right_side() == 'fruit':
-      branch(1)
-    else:
+  if touch() == 'fruit':
+    while touch() == 'fruit':
+      move()
+  elif left_side() == 'fruit':
+    branch(-1)
+  elif right_side() == 'fruit':
+    branch(1)
+  else:
 
 def go():
   branch(0)
