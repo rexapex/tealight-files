@@ -15,8 +15,6 @@ def move(spaces):
 
 def go():
   move(4) 
-  while True:
- 
   
   
   
