@@ -12,12 +12,11 @@ def branch(dir):
   turn(dir)
   
   while True:
+    move()
     if left_side():
       branch(-1)
     elif right_side():
       branch(1)
-    else:
-      move()
 
 def go():
   branch(0)
