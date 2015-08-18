@@ -11,7 +11,8 @@ def chessboard():
     for j in range(0, 8):
       square(sqSize)
       move(sqSize)
-   
+    turn(90)
+    move(8 * sqSize)
     
 turn(-90)
 chessboard()
