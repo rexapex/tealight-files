@@ -16,7 +16,7 @@ def branch(dir):
   while n < 1111:
     if touch() == 'fruit':
       move()
-    if left_side() == 'fruit':
+    elif left_side() == 'fruit':
       branch(-1)
     elif right_side() == 'fruit':
       branch(1)
