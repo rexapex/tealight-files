@@ -13,9 +13,9 @@ def branch(dir):
   
   while True:
     move()
-    if left_side():
+    if left_side() == 'fruit':
       branch(-1)
-    elif right_side():
+    elif right_side() == 'fruit':
       branch(1)
 
 def go():
