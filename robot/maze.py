@@ -12,6 +12,6 @@ def go():
     if left_side() == False:
       turn(1)
     elif right_side() == False:
-      turn(1)
+      turn(-1)
     move()
 go()
