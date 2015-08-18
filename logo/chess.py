@@ -19,5 +19,4 @@ def chessboard():
     turn(angle)
     
 
-turn(-90)
 chessboard()
