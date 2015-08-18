@@ -6,10 +6,13 @@ def square(side):
     turn(90)
 
 def chessboard(edges, size):
+  int size = 8;
   for i in range(0, 8):
     for j in range(0, 8):
-      square(8);
-      move(8)
+      square(size);
+      move(size)
+  turn(90)
+  move(size)
   turn(90)
 
 turn(-90)
