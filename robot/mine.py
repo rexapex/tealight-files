@@ -8,13 +8,13 @@ from tealight.robot import (move,
 
 # Add your code here
 def moveBy(spaces):
-  for i in range(0, spaces-1):
+  for i in range(0, spaces):
     move()
   
 
 
 def go():
-  moveBy(4) 
+  moveBy(3) 
   
   
   
