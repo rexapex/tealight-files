@@ -8,10 +8,9 @@ from tealight.robot import (move,
 
 # Add your code here
 def go():
-  dir = 0
-  
-  while left_side():
-    move()
+  while True:
+    if left_side()
+      move()
   
   
 go()
