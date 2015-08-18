@@ -10,7 +10,7 @@ def chessboard(edges, size):
     for j in range(0, 8):
       square(5);
       move(5)
-  turn(angle)
+  turn(90)
 
 turn(-90)
 chessboard(12,75)
