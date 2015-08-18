@@ -7,12 +7,21 @@ from tealight.robot import (move,
                             right_side)
 
 # Add your code here
+
+def branch(dir):
+  turn(dir)
+  while True:
+    if left_side():
+      branch(-1)
+    elif right_side():
+      branch(1)
+    else
+      move()
+
 def go():
   
   while True:
-    
-    if look():
-      move()
+    branch(0)
 
 
 go()
