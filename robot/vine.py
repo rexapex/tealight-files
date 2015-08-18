@@ -13,11 +13,11 @@ def branch(dir):
   run = True
   while run:
     if left_side():
+      run = False
       branch(-1)
-      run = False
     elif right_side():
-      branch(1)
       run = False
+      branch(1)
     else:
       move()
 
