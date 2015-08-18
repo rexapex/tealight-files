@@ -9,8 +9,8 @@ from tealight.robot import (move,
 # Add your code here
 def go():
   while True:
-    look()
-  
+    if look():
+      move()
   
   
   
