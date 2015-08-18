@@ -13,9 +13,9 @@ def branch(dir):
   run = True
   while run:
     if left_side():
-      branch(1)
-    elif right_side():
       branch(-1)
+    elif right_side():
+      branch(1)
     else:
       move()
 
