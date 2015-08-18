@@ -17,7 +17,8 @@ def go():
   moveBy(3) 
   turn(-1)
   while True:
-    move()
+    if right_side() or left_side():
+      move()
     
   
   
