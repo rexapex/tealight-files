@@ -65,7 +65,7 @@ def do_explosion():
     explosion = False
   elif explosion:
     star(explosionX, explosionY, "orange", 50-explosionTime, 50-explosionTime)
-    explosionTime--
+    explosionTime -= 1
     
 def handle_frame():
   global x,y,vx,vy,ax,ay
