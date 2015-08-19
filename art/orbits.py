@@ -9,7 +9,7 @@ vy = 0
 ax = 0
 ay = 0
 
-gravity = 4
+gravity = 1
 
 power = 0.3
 
