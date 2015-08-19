@@ -4,10 +4,20 @@ from tealight.art import screen_width, screen_height
 
 from math import sin, cos, pi
 
-
+car1
 running = False
 
+def handle_keydown(key):
+  global ax, ay
+
+  if key == "left" or key == "right":
+    car1.ax = 1
+  elif key == "up" or key == "down":
+    car1.ay = 1
+
 def start():
+  global car1
+  
   background("track.png")
   car1 = car()
   car1.init()
@@ -20,6 +30,7 @@ def update():
   global running
   
   while running:
+    car1.update()
     draw()
   
 def draw():
@@ -35,6 +46,13 @@ class car:
   
   def init(self):
     print("Car Initialised")
+    
+  def update(self):
+    vx = vx + ax
+    vy = vy + ay
+    
+    x = x + vx
+    y = y + vy
     
   def draw(self):
     color("red")
