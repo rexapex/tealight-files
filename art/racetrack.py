@@ -9,7 +9,10 @@ from math import sin, cos, pi
 def start():
   background("track.png")
 
+class car:
   
+  def init(self):
+    x = 0
 
 
 start()
