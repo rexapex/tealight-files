@@ -46,7 +46,8 @@ def handle_keydown(key):
   elif key == "up":
     ay = -power
   elif key == "down":
-    ay = power
+    ay = power  
+  elif key =="space":
     explosionX = x
     explosionY = y
     explosionTime = 50
