@@ -34,7 +34,7 @@ def star(x, y, c, size, spines):
     angle = angle + (2 * pi / spines)
 
 def handle_keydown(key):
-  global ax, ay
+  global ax, ay, explosionTime, explosionX, explosionY
   
 
   if key == "left":
@@ -45,8 +45,6 @@ def handle_keydown(key):
     ay = -power
   elif key == "down":
     ay = power
-  
-  if key == "space":
     explosionX = x
     explosionY = y
     explosionTime = 50
