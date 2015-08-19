@@ -29,7 +29,7 @@ def start():
 def update():
   global running
   
-  while running:
+  while True:
     print("running")
     car1.update()
     draw()
