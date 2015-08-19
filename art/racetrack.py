@@ -9,7 +9,7 @@ from math import sin, cos, pi
 def start():
   background("track.png")
   car1 = car()
-  car.init()
+  car1.init(car1)
 
 class car:
   
