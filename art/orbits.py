@@ -17,7 +17,6 @@ power = 0.3
 
 explosionX = 0
 explosionY = 0
-explosion = False
 explosionTime = 0
 
 def star(x, y, c, size, spines):
@@ -48,7 +47,6 @@ def handle_keydown(key):
     ay = power
   
   if key == "space":
-    explosion = True
     explosionX = x
     explosionY = y
     explosionTime = 50
@@ -62,9 +60,7 @@ def handle_keyup(key):
     ay = 0
 
 def do_explosion():
-  if explosionTime <= 0:
-    explosion = False
-  elif explosion:
+  if explosionTime > 0:
     star(explosionX, explosionY, "orange", 50-explosionTime, 50-explosionTime)
     explosionTime -= 1
     
