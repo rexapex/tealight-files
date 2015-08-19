@@ -9,11 +9,13 @@ from math import sin, cos, pi
 def start():
   background("track.png")
   car1 = car()
+  car.init()
 
 class car:
   
   def init(self):
     x = 0
+    print("Hello")
 
 
 start()
