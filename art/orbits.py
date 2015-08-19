@@ -46,7 +46,7 @@ def handle_keydown(key):
   elif key == "down":
     ay = power
   
-  if key == "down":
+  if key == "space":
     explosionX = x
     explosionY = y
     explosionTime = 50
@@ -79,7 +79,7 @@ def handle_frame():
   x = x + vx
   y = y + vy
   
-  do_explosion
+  do_explosion()
   
   color("blue")
   
