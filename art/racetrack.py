@@ -4,7 +4,7 @@ from tealight.art import screen_width, screen_height
 
 from math import sin, cos, pi
 
-car1
+car1 = car()
 running = False
 
 def handle_keydown(key):
@@ -19,7 +19,6 @@ def start():
   global car1
   
   background("track.png")
-  car1 = car()
   car1.init()
   car1.draw()
   
