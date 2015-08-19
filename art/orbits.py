@@ -11,6 +11,7 @@ ay = 0
 
 gravity = 0.2
 
+
 power = 0.3
 
 def handle_keydown(key):
