@@ -15,6 +15,10 @@ drag = 0
 
 power = 0.3
 
+explosionX = 0, explosionY = 0
+explosion = False
+explosionTime = 0
+
 def handle_keydown(key):
   global ax, ay
   
@@ -27,6 +31,12 @@ def handle_keydown(key):
     ay = -power
   elif key == "down":
     ay = power
+  
+  if key == "space":
+    explosion = True
+    explosionX = x
+    explosionY = y
+    explosionTime = 50
 
 def handle_keyup(key):
   global ax, ay
@@ -35,6 +45,10 @@ def handle_keyup(key):
     ax = 0
   elif key == "up" or key == "down":
     ay = 0
+
+def do_explosion():
+  if explosion:
+    
     
 def handle_frame():
   global x,y,vx,vy,ax,ay
@@ -50,6 +64,8 @@ def handle_frame():
   
   x = x + vx
   y = y + vy
+  
+  do_explosion
   
   color("blue")
   
