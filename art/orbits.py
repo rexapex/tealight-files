@@ -2,6 +2,8 @@ from tealight.art import (color, line, spot, circle, box, image, text, backgroun
 
 from tealight.art import screen_width, screen_height
 
+from math import sin, cos, pi
+
 x = screen_width / 2
 y = screen_height / 2
 vx = 0
