@@ -64,7 +64,7 @@ def do_explosion():
   global explosionTime, explosionX, explosionY
   
   if explosionTime > 0:
-    star(explosionX, explosionY, "orange", cos(explosionTime), cos(explosionTime))
+    star(explosionX, explosionY, "orange", 50-explosionTime, 50-explosionTime)
     explosionTime -= 1
     
 def handle_frame():
