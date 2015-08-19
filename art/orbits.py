@@ -45,7 +45,7 @@ def handle_frame():
   vx = vx + ax
   vy = vy + ay + gravity
   
-  drag = - vy * 0.05
+  drag = - vy * 0.005
   vy += drag
   
   x = x + vx
