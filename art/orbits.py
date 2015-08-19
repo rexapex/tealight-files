@@ -61,7 +61,7 @@ def handle_keyup(key):
     ay = 0
 
 def do_explosion():
-  if explosionTime <= 0
+  if explosionTime <= 0:
     explosion = False
   elif explosion:
     star(explosionX, explosionY, "orange", 50-explosionTime, 50-explosionTime)
