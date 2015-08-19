@@ -10,6 +10,7 @@ ax = 0
 ay = 0
 
 gravity = 0.2
+drag = 0
 
 
 power = 0.3
@@ -43,6 +44,9 @@ def handle_frame():
   spot(x,y,8)
   vx = vx + ax
   vy = vy + ay + gravity
+  
+  drag = - vy * 0.05
+  vy += drag
   
   x = x + vx
   y = y + vy
