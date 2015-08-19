@@ -12,10 +12,17 @@ def start():
   car1.init()
 
 class car:
+  x = 0
+  y = 0
+  vx = 0
+  vy = 0
+  ax = 0
+  ay = 0
   
   def init(self):
-    x = 0
-    print("Hello")
+    print("Car Initialised")
+  
+  
 
 
 start()
