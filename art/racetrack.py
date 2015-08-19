@@ -5,11 +5,24 @@ from tealight.art import screen_width, screen_height
 from math import sin, cos, pi
 
 
+running = False
 
 def start():
   background("track.png")
   car1 = car()
   car1.init()
+  car1.draw()
+  
+  running = True
+  update()
+  
+def update():
+  global running
+  
+  while running:
+    draw()
+  
+def draw():
   car1.draw()
 
 class car:
