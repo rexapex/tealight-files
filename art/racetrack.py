@@ -55,7 +55,7 @@ class car:
     
   def draw(self):
     color("red")
-    spot(self.x, self.y, 50)
+    spot(self.x, self.y, 25)
   
   
 
