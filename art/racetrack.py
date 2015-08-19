@@ -7,7 +7,7 @@ from math import sin, cos, pi
 
 
 def start():
-  background("track")
+  background("track.png")
   
   
 start()
