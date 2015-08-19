@@ -61,8 +61,11 @@ def handle_keyup(key):
     ay = 0
 
 def do_explosion():
-  if explosion:
-    star(explosionX, explosionY, )
+  if explosionTime <= 0
+    explosion = False
+  elif explosion:
+    star(explosionX, explosionY, "orange", 50-explosionTime, 50-explosionTime)
+    explosionTime--
     
 def handle_frame():
   global x,y,vx,vy,ax,ay
