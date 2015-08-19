@@ -8,6 +8,7 @@ from math import sin, cos, pi
 
 def start():
   background("track.png")
+  car1 = car()
 
 class car:
   
