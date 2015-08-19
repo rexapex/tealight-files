@@ -29,6 +29,7 @@ def update():
   global running
   
   while running:
+    print("running")
     car1.update()
     draw()
   
@@ -44,7 +45,8 @@ class car:
   ay = 0
   
   def init(self):
-    print("Car Initialised")
+    x = 0
+    y = 0
     
   def update(self):
     vx = vx + ax
