@@ -23,7 +23,7 @@ class car:
     print("Car Initialised")
     
   def draw(self):
-    color"red"
+    color("red")
     spot(self.x, self.y, 50)
   
   
