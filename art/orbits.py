@@ -9,6 +9,8 @@ vy = 0
 ax = 0
 ay = 0
 
+gravity = 4
+
 power = 0.3
 
 def handle_keydown(key):
@@ -39,7 +41,7 @@ def handle_frame():
   
   spot(x,y,8)
   vx = vx + ax
-  vy = vy + ay
+  vy = vy + ay + gravity
   
   x = x + vx
   y = y + vy
