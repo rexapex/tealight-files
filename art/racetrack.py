@@ -10,6 +10,7 @@ def start():
   background("track.png")
   car1 = car()
   car1.init()
+  car1.draw()
 
 class car:
   x = 0
