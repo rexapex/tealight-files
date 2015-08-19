@@ -66,6 +66,8 @@ def do_explosion():
   if explosionTime > 0:
     star(explosionX, explosionY, "orange", 50-explosionTime, 50-explosionTime)
     explosionTime -= 1
+    if explosionTime == 0:
+      star(explosionX, explosionY, "white", 50-explosionTime, 50-explosionTime)
     
 def handle_frame():
   global x,y,vx,vy,ax,ay
