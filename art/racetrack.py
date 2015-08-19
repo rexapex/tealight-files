@@ -4,7 +4,7 @@ from tealight.art import screen_width, screen_height
 
 from math import sin, cos, pi
 
-car1 = car()
+car1
 running = False
 
 def handle_keydown(key):
