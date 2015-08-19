@@ -60,6 +60,8 @@ def handle_keyup(key):
     ay = 0
 
 def do_explosion():
+  global explosionTime, explosionX, explosionY
+  
   if explosionTime > 0:
     star(explosionX, explosionY, "orange", 50-explosionTime, 50-explosionTime)
     explosionTime -= 1
