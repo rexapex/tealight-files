@@ -21,6 +21,9 @@ class car:
   
   def init(self):
     print("Car Initialised")
+    
+  def draw(self):
+    spot(self.x, self.y, 50)
   
   
 
