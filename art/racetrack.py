@@ -5,6 +5,7 @@ from tealight.art import screen_width, screen_height
 from math import sin, cos, pi
 
 running = False
+car1 = None
 
 def handle_keydown(key):
   global ax, ay
