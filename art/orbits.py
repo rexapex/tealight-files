@@ -38,7 +38,6 @@ def star(x, y, c, size, spines):
 def handle_keydown(key):
   global ax, ay, explosionTime, explosionX, explosionY
   
-
   if key == "left":
     ax = -power
   elif key == "right":
