@@ -10,4 +10,8 @@ def start():
   background("track.png")
   
   
+def class
+  x = 0
+
+  
 start()
