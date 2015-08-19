@@ -18,6 +18,7 @@ def start():
   global car1
   
   background("track.png")
+  car1 = car()
   car1.init()
   car1.draw()
   
