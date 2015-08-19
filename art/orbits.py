@@ -19,6 +19,20 @@ explosionX = 0, explosionY = 0
 explosion = False
 explosionTime = 0
 
+def star(x, y, c, size, spines):
+  
+  color(c)
+  
+  angle = 0
+  
+  for i in range(0, spines):
+    x0 = x + (size * cos(angle))
+    y0 = y + (size * sin(angle))
+    
+    line(x, y, x0, y0)
+    
+    angle = angle + (2 * pi / spines)
+
 def handle_keydown(key):
   global ax, ay
   
@@ -48,7 +62,7 @@ def handle_keyup(key):
 
 def do_explosion():
   if explosion:
-    
+    star(explosionX, explosionY, )
     
 def handle_frame():
   global x,y,vx,vy,ax,ay
