@@ -15,7 +15,8 @@ drag = 0
 
 power = 0.3
 
-explosionX = 0, explosionY = 0
+explosionX = 0
+explosionY = 0
 explosion = False
 explosionTime = 0
 
