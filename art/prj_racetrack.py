@@ -18,6 +18,7 @@ def start():
   
 def handle_frame():
   for i in range (0, len(cars)):
+    cars[i].update()
     cars[i].draw()
 
 init()
