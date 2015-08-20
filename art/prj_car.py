@@ -19,9 +19,9 @@ class car:
     line(5, 10, 15, 5)
     line(5, 0, 15, 5)
     
-  def editOrientation(dOri):
-    orientation = orientation + dOri
+  def editOrientation(self, dOri):
+    self.orientation = self.orientation + dOri
     
-  def editAcceleration(da):
-    acceleration = acceleration + da
+  def editAcceleration(self, da):
+    self.acceleration = self.acceleration + da
     
