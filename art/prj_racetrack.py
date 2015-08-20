@@ -41,7 +41,6 @@ def handle_frame():
   #Draw the map
   color("green")
   rectangle(outerWallX, outerWallY, outerWallWidth, outerWallHeight)
-  color("blue")
   box(innerWallX, innerWallY, innerWallWidth, innerWallHeight)
   spot(screen_width/2, innerWallY, innerWallWidth/2)
   spot(screen_width/2, innerWallHeight+innerWallY, innerWallWidth/2)
