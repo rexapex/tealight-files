@@ -30,6 +30,9 @@ def handle_frame():
   global thisCar, otherCars
   
   thisCar.update()
+  
+  testCollisions()
+  
   thisCar.draw()
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
