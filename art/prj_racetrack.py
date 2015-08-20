@@ -42,8 +42,8 @@ def handle_frame():
   rectangle(outerWallX, outerWallY, outerWallWidth, outerWallHeight)
   box(innerWallX, innerWallY, innerWallWidth, innerWallHeight)
   
-  spot(screen_width/2, innerWallY, (screen_width-240)/2)
-  spot(screen_width/2, innerWallHeight, (screen_width-240)/2)
+  spot(screen_width/2, innerWallY, innerWallWidth/2)
+  spot(screen_width/2, innerWallHeight, innerWallWidth/2)
 
   
 def testCollisions():
