@@ -6,6 +6,7 @@ from math import sin, cos, pi
 
 from github.rexapex.art.prj_car import car
 
+thisCar = None
 cars = [None]
 
 def init():
@@ -22,13 +23,13 @@ def handle_frame():
 
 def handle_keydown(key):
   if key == "left":
-    ax = -power
+    thisCar.
   elif key == "right":
     ax = power
   elif key == "up":
     ay = -power
   elif key == "down":
-    ay = power  
+    ay = power
 
 init()
 start()
