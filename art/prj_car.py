@@ -12,23 +12,8 @@ class car:
   
   power = 0.3
   
-  turn_left = "left"
-  turn_right = "right"
-  accelerate = "up"
-  brake = "down"
-  
-  def setControls(self, left, right, up, down):
-    self.turn_left = left
-    self.turn_right = right
-    self.accelerate = up
-    self.brake = down
-  
   def update(self):
-    self.vx = self.vx + self.ax
-    self.vy = self.vy + self.ay
-    
-    self.x = self.x + self.vx
-    self.y = self.y + self.vy
+    x = 0
     
   def draw(self):
     line(5, 10, 15, 5)
