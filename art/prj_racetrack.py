@@ -6,7 +6,7 @@ from math import sin, cos, pi, sqrt
 
 from github.Krimzar.art.racecar import car
 
-car1 = None                  #The player using this computer
+car1 = None      #The player using this computer
 car2 = None
 
 outerWallX = 5
