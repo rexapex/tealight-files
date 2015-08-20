@@ -26,13 +26,11 @@ class car:
     self.brake = down
   
   def update(self):
-    global x, y, vx, vy, ax, xy
+    self.vx = self.vx + self.ax
+    self.vy = self.vy + self.ay
     
-    vx = vx + ax
-    vy = vy + ay + gravity
-    
-    x = x + vx
-    y = y + vy
+    self.x = self.x + self.vx
+    self.y = self.y + self.vy
     
   def draw(self):
     line(5, 10, 15, 5)
