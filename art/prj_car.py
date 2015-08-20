@@ -13,12 +13,10 @@ class car:
   power = 0.3
   
   def update(self):
-    global x, acceleration
-    
     self.x += self.acceleration
     
   def draw(self):
-    spot(x, y, 25)
+    spot(self.x, self.y, 25)
     
   def editOrientation(self, dOri):
     self.orientation = self.orientation + dOri
