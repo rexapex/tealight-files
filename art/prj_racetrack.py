@@ -35,10 +35,12 @@ def handle_frame():
   color("red")
   
   car1.update_speed()
+  car2.update_speed()
   
   testCollisions()
   
   car1.draw_car()
+  car2.draw_car()
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
  #   otherCars[i].draw()
@@ -93,6 +95,15 @@ def handle_keydown(key):
       car1.Acceleration = 0.05
   #elif key == "down":
     #car1.change_acceleration(-5)
+    
+  if key == "a":
+    car2.change_orientation(5)
+  elif key == "d":
+    car2.change_orientation(-5)
+  elif key == "w":
+    car2.Acceleration += 0.01
+    if car2.Acceleration > 0.05:
+      car2.Acceleration = 0.05
 
 #init()
 start()
