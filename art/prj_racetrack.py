@@ -17,7 +17,7 @@ def start():
   cars[0] = car1
   
 def handle_frame():
-  for i in range (0, len(cars))
+  for i in range (0, len(cars)):
     cars[i].draw()
 
 init()
