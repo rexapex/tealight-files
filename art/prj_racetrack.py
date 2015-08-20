@@ -88,7 +88,7 @@ def handle_keydown(key):
   elif key == "right":
     car1.change_orientation(5)
   elif key == "up":
-    car1.Acceleration += 0.01]
+    car1.Acceleration += 0.01
     if car1.Acceleration > 0.05
       car1.Acceleration = 0.05
   #elif key == "down":
