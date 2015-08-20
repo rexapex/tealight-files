@@ -13,7 +13,6 @@ def init():
 
 def start():
   car1 = car()
-  car1.draw()
   cars[0] = car1
 
 def handle_frame():
