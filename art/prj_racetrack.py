@@ -41,7 +41,8 @@ def handle_frame():
   #Draw the map
   rectangle(outerWallX, outerWallY, outerWallWidth, outerWallHeight)
   box(innerWallX, innerWallY, innerWallWidth, innerWallHeight)
-  #spot(screen_width/2, screen_height/4, (screen_width-240)/2)
+  
+  spot(screen_width/2, innerWallY, (screen_width-240)/2)
 
   
 def testCollisions():
