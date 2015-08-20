@@ -15,7 +15,7 @@ class car:
   def update(self):
     global x
     
-    x += acceleration
+    self.x += acceleration
     
   def draw(self):
     line(5, 10, 15, 5)
