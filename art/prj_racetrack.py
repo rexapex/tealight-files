@@ -51,18 +51,18 @@ def testCollisions():
   global car1, car2
   
   #Outer Wall Collision
-  if car1.x <= outerWallX:
-    car1.x = outerWallX
-  elif car1.x >= outerWallWidth:
-    car1.x = outerWallWidth
-  if car1.y <= outerWallY:
-    car1.y = outerWallY
-  elif car1.y >= outerWallHeight:
-    car1.y = outerWallHeight
+  if car1.CoordCentre["x"] <= outerWallX:
+    car1.CoordCentre["x"] = outerWallX
+  elif car1.CoordCentre["x"] >= outerWallWidth:
+    car1.CoordCentre["x"] = outerWallWidth
+  if car1.CoordCentre["y"] <= outerWallY:
+    car1.CoordCentre["y"] = outerWallY
+  elif car1.CoordCentre["y"] >= outerWallHeight:
+    car1.CoordCentre["y"] = outerWallHeight
     
   #Inner Wall Collision
-  if boxCollision(thisCar.x, thisCar.y, innerWallX, innerWallY, innerWallWidth, innerWallHeight):
-    print "Collided with centre box"
+  #if boxCollision(thisCar.x, thisCar.y, innerWallX, innerWallY, innerWallWidth, innerWallHeight):
+  #  print "Collided with centre box"
   
   
 #Returns True if point is inside the box
