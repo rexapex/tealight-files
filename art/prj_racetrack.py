@@ -84,9 +84,9 @@ def handle_keydown(key):
   global car1, car2
   
   if key == "left":
-    car1.change_orientation(-5)
-  elif key == "right":
     car1.change_orientation(5)
+  elif key == "right":
+    car1.change_orientation(-5)
   elif key == "up":
     car1.Acceleration += 0.01
     if car1.Acceleration > 0.05:
