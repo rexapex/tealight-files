@@ -1,4 +1,4 @@
-from tealight.art import (color, line, spot, circle, box, image, text, background)
+from tealight.art import (color, line, spot, circle, box, image, text, background, rectangle)
 
 from tealight.art import screen_width, screen_height
 
@@ -27,7 +27,8 @@ def handle_frame():
  #   otherCars[i].draw()
   
   #Draw the map
-  box(5, 5, screen_width-10, screen_height-10)
+  rectangle(5, 5, screen_width-10, screen_height-10)
+  box(30, 30, screen_width-60, screen_height-60)
 
 def handle_keydown(key):
   if key == "left":
