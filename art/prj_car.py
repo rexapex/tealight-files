@@ -12,6 +12,8 @@ class car:
   ax = 0
   ay = 0
   
+  power = 0.3
+  
   turn_left = "left"
   turn_right = "right"
   accelerate = "up"
