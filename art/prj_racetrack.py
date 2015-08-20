@@ -40,7 +40,7 @@ def handle_frame():
   
   #Draw the map
   rectangle(outerWallX, outerWallY, outerWallWidth, outerWallHeight)
-  box(innerWallX, innerWallY, innerWallWidth, innerWallHeight)
+  #box(innerWallX, innerWallY, innerWallWidth, innerWallHeight)
   
   spot(screen_width/2, innerWallY, innerWallWidth/2)
   spot(screen_width/2, innerWallHeight, innerWallWidth/2)
