@@ -26,6 +26,9 @@ def start():
   
   car1 = car()
   car2 = car()
+  
+  car1.change_orientation(1)
+  car2.change_orientation(1)
 
 def handle_frame():
   global car1, car2
