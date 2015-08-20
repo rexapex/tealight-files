@@ -12,6 +12,17 @@ class car:
   ax = 0
   ay = 0
   
+  turn_left = "left"
+  turn_right = "right"
+  accelerate = "up"
+  brake = "down"
+  
+  def setControls(self, left, right, up, down):
+    self.turn_left = left
+    self.turn_right = right
+    self.accelerate = up
+    self.brake = down
+  
   def update(self):
     x = 0
     y = 0
