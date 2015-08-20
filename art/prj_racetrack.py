@@ -24,7 +24,7 @@ innerWallHeight = screen_height-500
 def start():
   global car1, car2
   
-  car1 = car()
+  car1 = new car()
   car2 = car()
   
   car1.change_orientation(1)
