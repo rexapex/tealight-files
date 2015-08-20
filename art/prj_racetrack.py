@@ -4,10 +4,10 @@ from tealight.art import screen_width, screen_height
 
 from math import sin, cos, pi, sqrt
 
-from github.rexapex.art.prj_car import car
+from github.Krimzar.art.racecar import car
 
-thisCar = None                  #The player using this computer
-otherCars = [None, None, None]  #Other players connected to game
+car1 = None                  #The player using this computer
+car2 = None
 
 outerWallX = 5
 outerWallY = 5
@@ -24,16 +24,17 @@ innerWallHeight = screen_height-500
 def start():
   global thisCar
   
-  thisCar = car()
+  car1 = car()
+  car2 = car()
 
 def handle_frame():
   global thisCar, otherCars
   
-  thisCar.update()
+  car1.update_speed()
   
   testCollisions()
   
-  thisCar.draw()
+  car1.draw()
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
  #   otherCars[i].draw()
@@ -48,14 +49,14 @@ def handle_frame():
   
 def testCollisions():
   #Outer Wall Collision
-  if thisCar.x <= outerWallX:
-    thisCar.x = outerWallX
-  elif thisCar.x >= outerWallWidth:
-    thisCar.x = outerWallWidth
-  if thisCar.y <= outerWallY:
-    thisCar.y = outerWallY
-  elif thisCar.y >= outerWallHeight:
-    thisCar.y = outerWallHeight
+  if car1.x <= outerWallX:
+    car1.x = outerWallX
+  elif car1.x >= outerWallWidth:
+    car1.x = outerWallWidth
+  if car1.y <= outerWallY:
+    car1.y = outerWallY
+  elif car1.y >= outerWallHeight:
+    car1.y = outerWallHeight
     
   #Inner Wall Collision
   if boxCollision(thisCar.x, thisCar.y, innerWallX, innerWallY, innerWallWidth, innerWallHeight):
@@ -75,13 +76,13 @@ def boxCollision(x, y, boxX, boxY, boxWidth, boxHeight):
 
 def handle_keydown(key):
   if key == "left":
-    thisCar.editOrientation(-1)
+    car1.editOrientation(-1)
   elif key == "right":
-    thisCar.editOrientation(1)
+    car1.editOrientation(1)
   elif key == "up":
-    thisCar.editAcceleration(1)
+    car1.editAcceleration(1)
   elif key == "down":
-    thisCar.editAcceleration(-1)
+    car1.editAcceleration(-1)
 
 #init()
 start()
