@@ -13,7 +13,8 @@ class car:
   ay = 0
   
   def update(self):
-    x= 0
+    x = 0
+    y = 0
     
   def draw(self):
     line(5, 10, 15, 5)
