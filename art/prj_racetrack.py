@@ -12,6 +12,9 @@ def init():
 def start():
   car1 = car()
   car1.draw()
+  
+def handle_frame():
+  
 
 init()
 start()
