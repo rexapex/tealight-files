@@ -59,12 +59,20 @@ def testCollisions():
   #Outer Wall Collision
   if car1.CoordD["x"] <= outerWallX:
     car1.CoordD["x"] = outerWallX
+    car1.Acceleration = 0
+    car1.Speed = 0
   elif car1.CoordD["x"] >= outerWallWidth:
     car1.CoordD["x"] = outerWallWidth
+    car1.Acceleration = 0
+    car1.Speed = 0
   if car1.CoordD["y"] <= outerWallY:
     car1.CoordD["y"] = outerWallY
+    car1.Acceleration = 0
+    car1.Speed = 0
   elif car1.CoordD["y"] >= outerWallHeight:
     car1.CoordD["y"] = outerWallHeight
+    car1.Acceleration = 0
+    car1.Speed = 0
     
   #Inner Wall Collision
   #if boxCollision(thisCar.x, thisCar.y, innerWallX, innerWallY, innerWallWidth, innerWallHeight):
