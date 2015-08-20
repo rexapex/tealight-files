@@ -93,10 +93,7 @@ def handle_keydown(key):
     car1.Acceleration += 0.01
     if car1.Acceleration > 0.05:
       car1.Acceleration = 0.05
-  #elif key == "down":
-    #car1.change_acceleration(-5)
-    
-  if key == "a":
+  elif key == "a":
     car2.change_orientation(5)
   elif key == "d":
     car2.change_orientation(-5)
