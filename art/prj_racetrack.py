@@ -60,7 +60,7 @@ def testCollisions():
   if car1.CoordD["x"] <= outerWallX:
     car1.CoordD["x"] = outerWallX
     car1.Acceleration = 0
-    car1.Speed = 0
+    car1.Speed = -car1.Acceleration
   elif car1.CoordD["x"] >= outerWallWidth:
     car1.CoordD["x"] = outerWallWidth
     car1.Acceleration = 0
