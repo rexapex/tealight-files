@@ -13,6 +13,8 @@ class car:
   power = 0.3
   
   def update(self):
+    global x
+    
     x += acceleration
     
   def draw(self):
