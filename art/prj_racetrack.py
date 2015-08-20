@@ -14,9 +14,9 @@ outerWallY = 5
 outerWallWidth = screen_width-10
 outerWallHeight = screen_height-10
 innerWallX = 120
-innerWallY = 120
+innerWallY = 200
 innerWallWidth = screen_width-240
-innerWallHeight = screen_height-240
+innerWallHeight = screen_height-400
 
 #def init():
   #background("track.png")
@@ -49,6 +49,11 @@ def testCollisions():
     thisCar.x = outerWallX
   elif thisCar.x >= outerWallWidth:
     thisCar.x = outerWallWidth
+  
+  if thisCar.y <= outerWallY:
+    thisCar.y = outerWallY
+  elif thisCar.y >= outerWallHeight:
+    thisCar.y = outerWallHeight
 
 
 def handle_keydown(key):
