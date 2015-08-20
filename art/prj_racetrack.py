@@ -22,7 +22,7 @@ innerWallHeight = screen_height-500
   #background("track.png")
 
 def start():
-  global thisCar
+  global car1, car2
   
   car1 = car()
   car2 = car()
@@ -48,6 +48,8 @@ def handle_frame():
 
   
 def testCollisions():
+  global car1, car2
+  
   #Outer Wall Collision
   if car1.x <= outerWallX:
     car1.x = outerWallX
@@ -75,6 +77,8 @@ def boxCollision(x, y, boxX, boxY, boxWidth, boxHeight):
 #def circleCollision():
 
 def handle_keydown(key):
+  global car1, car2
+  
   if key == "left":
     car1.editOrientation(-1)
   elif key == "right":
