@@ -30,6 +30,10 @@ def start():
 def handle_frame():
   global car1, car2
   
+  color("white")
+  box(0, 0, screen_width, screen_height)
+  color("red")
+  
   car1.update_speed()
   
   testCollisions()
@@ -84,9 +88,11 @@ def handle_keydown(key):
   elif key == "right":
     car1.change_orientation(5)
   elif key == "up":
-    car1.change_orientation(5)
-  elif key == "down":
-    car1.change_orientation(-5)
+    car1.Acceleration += 0.01]
+    if car1.Acceleration > 0.05
+      car1.Acceleration = 0.05
+  #elif key == "down":
+    #car1.change_acceleration(-5)
 
 #init()
 start()
