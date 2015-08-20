@@ -70,7 +70,7 @@ def boxCollision(x, y, boxX, boxY, boxWidth, boxHeight):
 
   
 #Returns True if point is inside the circle
-def circleCollision():
+#def circleCollision():
 
 def handle_keydown(key):
   if key == "left":
