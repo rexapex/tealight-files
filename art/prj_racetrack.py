@@ -14,9 +14,9 @@ outerWallY = 5
 outerWallWidth = screen_width-10
 outerWallHeight = screen_height-10
 innerWallX = 120
-innerWallY = 220
+innerWallY = 250
 innerWallWidth = screen_width-240
-innerWallHeight = screen_height-440
+innerWallHeight = screen_height-500
 
 #def init():
   #background("track.png")
