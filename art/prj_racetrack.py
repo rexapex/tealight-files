@@ -9,8 +9,8 @@ from github.rexapex.art.prj_car import car
 thisCar = None                  #The player using this computer
 otherCars = [None, None, None]  #Other players connected to game
 
-def init():
-  background("track.png")
+#def init():
+  #background("track.png")
 
 def start():
   global thisCar
@@ -27,7 +27,7 @@ def handle_frame():
  #   otherCars[i].draw()
   
   #Draw the map
-  rectangle(5, 5, screen_width-10, screen_height-10)
+  box(5, 5, screen_width-10, screen_height-10)
 
 def handle_keydown(key):
   if key == "left":
