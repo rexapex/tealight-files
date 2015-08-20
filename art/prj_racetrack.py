@@ -4,7 +4,7 @@ from tealight.art import screen_width, screen_height
 
 from math import sin, cos, pi
 
-import prj_car
+from prj_car import *
 
 def start():
   car1 = car()
