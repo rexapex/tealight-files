@@ -39,5 +39,5 @@ def handle_keydown(key):
   elif key == "down":
     thisCar.editAcceleration(-1)
 
-init()
+#init()
 start()
