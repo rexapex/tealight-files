@@ -15,11 +15,21 @@ def start():
   car1 = car()
   car1.draw()
   cars[0] = car1
-  
+
 def handle_frame():
   for i in range (0, len(cars)):
     cars[i].update()
     cars[i].draw()
+
+def handle_keydown(key):
+  if key == "left":
+    ax = -power
+  elif key == "right":
+    ax = power
+  elif key == "up":
+    ay = -power
+  elif key == "down":
+    ay = power  
 
 init()
 start()
