@@ -23,8 +23,11 @@ def handle_frame():
   thisCar.update()
   thisCar.draw()
   
-  for i in range (0, len(cars)):
+  for i in range (0, len(cars)):  #Draw connected players cars
     cars[i].draw()
+  
+  #Draw the map
+  rectangle(5, 5, screen_width-10, screen_height-10)
 
 def handle_keydown(key):
   if key == "left":
