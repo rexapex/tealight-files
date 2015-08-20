@@ -4,7 +4,7 @@ from tealight.art import screen_width, screen_height
 
 from math import sin, cos, pi
 
-import github.rexapex.art.prj_car
+from github.rexapex.art.prj_car
 
 def start():
   car1 = car()
