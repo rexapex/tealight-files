@@ -18,8 +18,7 @@ class car:
     self.x += self.acceleration
     
   def draw(self):
-    line(5, 10, 15, 5)
-    line(5, 0, 15, 5)
+    spot(x, y, 25)
     
   def editOrientation(self, dOri):
     self.orientation = self.orientation + dOri
