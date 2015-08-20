@@ -9,6 +9,15 @@ from github.rexapex.art.prj_car import car
 thisCar = None                  #The player using this computer
 otherCars = [None, None, None]  #Other players connected to game
 
+outerWallX = 5
+outerWallY = 5
+outerWallWidth = screen_width-10
+outerWallHeight = screen_height-10
+innerWallX = 120
+innerWallY = 120
+innerWallWidth = screen_width-240
+innerWallHeight = screen_height-240
+
 #def init():
   #background("track.png")
 
@@ -27,9 +36,14 @@ def handle_frame():
  #   otherCars[i].draw()
   
   #Draw the map
-  rectangle(5, 5, screen_width-10, screen_height-10)
-  box(120, 120, screen_width-240, screen_height-240)
+  rectangle(outerWallX, outerWallY, outerWallWidth, outerWallHeight)
+  box(innerWallX, innerWallY, innerWallWidth, innerWallHeight)
   #spot(screen_width/2, screen_height/4, (screen_width-240)/2)
+
+  
+def testCollisions():
+  if thisCar.x <= 
+
 
 def handle_keydown(key):
   if key == "left":
