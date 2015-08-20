@@ -78,17 +78,40 @@ def testCollisions():
    # car1.Speed = -car1.Speed
     car1.change_orientation(180)
     
+    
+    
+  if car2.CoordD["x"] <= outerWallX:
+    car2.CoordD["x"] = outerWallX
+    car2.Acceleration = 0
+    #car1.Speed = -car1.Speed
+    car2.change_orientation(180)
+  elif car2.CoordD["x"] >= outerWallWidth:
+    car2.CoordD["x"] = outerWallWidth
+    car2.Acceleration = 0
+   # car1.Speed = -car1.Speed
+    car2.change_orientation(180)
+  if car2.CoordD["y"] <= outerWallY:
+    car2.CoordD["y"] = outerWallY
+    car2.Acceleration = 0
+   # car1.Speed = -car1.Speed
+    car2.change_orientation(180)
+  elif car2.CoordD["y"] >= outerWallHeight:
+    car2.CoordD["y"] = outerWallHeight
+    car2.Acceleration = 0
+   # car1.Speed = -car1.Speed
+    car2.change_orientation(180)
+    
   #Inner Wall Collision
   #if boxCollision(thisCar.x, thisCar.y, innerWallX, innerWallY, innerWallWidth, innerWallHeight):
   #  print "Collided with centre box"
   
   
 #Returns True if point is inside the box
-def boxCollision(x, y, boxX, boxY, boxWidth, boxHeight):
-  if x >= boxX and x <= boxWidth and y >= boxY and y <= boxHeight:
-    return True
-  else:
-    return False
+#def boxCollision(x, y, boxX, boxY, boxWidth, boxHeight):
+#  if x >= boxX and x <= boxWidth and y >= boxY and y <= boxHeight:
+#    return True
+#  else:
+#    return False
 
   
 #Returns True if point is inside the circle
