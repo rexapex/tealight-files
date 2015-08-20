@@ -72,11 +72,11 @@ def testCollisions():
   
   
 #Returns True if point is inside the box
-#def boxCollision(x, y, boxX, boxY, boxWidth, boxHeight):
- ## if x >= boxX and x <= boxWidth and y >= boxY and y <= boxHeight:
- #   return True
- # else:
- #   return False
+def boxCollision(x, y, boxX, boxY, boxWidth, boxHeight):
+  if x >= boxX and x <= boxWidth and y >= boxY and y <= boxHeight:
+    return True
+  else:
+    return False
 
   
 #Returns True if point is inside the circle
