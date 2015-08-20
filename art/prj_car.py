@@ -36,14 +36,3 @@ class car:
     line(5, 10, 15, 5)
     line(5, 0, 15, 5)
     
-  def handle_keydown(key):
-    global ax, ay
-    
-    if key == turn_left:
-      ax = -power
-    elif key == turn_right:
-      ax = power
-    elif key == accelerate:
-      ay = -power
-    elif key == brake:
-      ay = power  
