@@ -5,7 +5,6 @@ from tealight.art import screen_width, screen_height
 from math import sin, cos, pi
 
 class car:
-  
   x = 0
   y = 0
   vx = 0
