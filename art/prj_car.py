@@ -1,4 +1,8 @@
+from tealight.art import (color, line, spot, circle, box, image, text, background)
 
+from tealight.art import screen_width, screen_height
+
+from math import sin, cos, pi
 
 class car:
   
@@ -12,4 +16,5 @@ class car:
   def update(self):
     
   def draw(self):
-    
+    line(5, 10, 15, 5)
+    line(5, 0, 15, 5)
