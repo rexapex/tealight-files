@@ -32,9 +32,9 @@ def handle_keydown(key):
   elif key == "right":
     thisCar.editOrientation(1)
   elif key == "up":
-    thisCar.editAcceleration(-1)
+    thisCar.editAcceleration(1)
   elif key == "down":
-    ay = power
+    thisCar.editAcceleration(-1)
 
 init()
 start()
