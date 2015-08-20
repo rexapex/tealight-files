@@ -28,11 +28,11 @@ def handle_frame():
 
 def handle_keydown(key):
   if key == "left":
-    thisCar.
+    thisCar.editOrientation(-1)
   elif key == "right":
-    ax = power
+    thisCar.editOrientation(1)
   elif key == "up":
-    ay = -power
+    thisCar.editAcceleration(-1)
   elif key == "down":
     ay = power
 
