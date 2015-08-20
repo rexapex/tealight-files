@@ -65,7 +65,7 @@ def testCollisions():
 def boxCollision(x, y, boxX, boxY, boxWidth, boxHeight):
   if x >= boxX and x <= boxWidth and y >= boxY and y <= boxHeight:
     return True
-  else
+  else:
     return False
 
   
