@@ -23,8 +23,8 @@ def handle_frame():
   thisCar.update()
   thisCar.draw()
   
-  for i in range (0, len(cars)):  #Draw connected players cars
-    cars[i].draw()
+  for i in range (0, len(otherCars)):  #Draw connected players cars
+    otherCars[i].draw()
   
   #Draw the map
   rectangle(5, 5, screen_width-10, screen_height-10)
