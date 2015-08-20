@@ -28,7 +28,7 @@ def start():
   car2 = car()
 
 def handle_frame():
-  global thisCar, otherCars
+  global car1, car2
   
   car1.update_speed()
   
