@@ -6,8 +6,8 @@ from math import sin, cos, pi
 
 from github.rexapex.art.prj_car import car
 
-thisCar = None
-otherCars = [None, None, None]
+thisCar = None                  #The player using this computer
+otherCars = [None, None, None]  #Other players connected to game
 
 def init():
   background("track.png")
