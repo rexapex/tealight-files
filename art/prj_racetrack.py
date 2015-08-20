@@ -80,13 +80,13 @@ def handle_keydown(key):
   global car1, car2
   
   if key == "left":
-    car1.editOrientation(-1)
+    car1.change_orientation(-5)
   elif key == "right":
-    car1.editOrientation(1)
+    car1.change_orientation(5)
   elif key == "up":
-    car1.editAcceleration(1)
+    car1.change_orientation(5)
   elif key == "down":
-    car1.editAcceleration(-1)
+    car1.change_orientation(-5)
 
 #init()
 start()
