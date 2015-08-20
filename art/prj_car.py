@@ -26,6 +26,8 @@ class car:
     self.brake = down
   
   def update(self):
+    global x, y, vx, vy, ax, xy
+    
     vx = vx + ax
     vy = vy + ay + gravity
     
