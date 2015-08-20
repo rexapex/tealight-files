@@ -28,7 +28,7 @@ def handle_frame():
   
   #Draw the map
   rectangle(5, 5, screen_width-10, screen_height-10)
-  box(30, 30, screen_width-60, screen_height-60)
+  box(90, 90, screen_width-180, screen_height-180)
 
 def handle_keydown(key):
   if key == "left":
