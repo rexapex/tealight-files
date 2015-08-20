@@ -44,8 +44,8 @@ def handle_frame():
 def testCollisions():
   if thisCar.x <= outerWallX:
     thisCar.x = outerWallX
-  elif thisCar.x >= outerWallWidth+outerWallX:
-    thisCar.x = outerWallWidth+outerWallX
+  elif thisCar.x >= outerWallWidth:
+    thisCar.x = outerWallWidth
 
 
 def handle_keydown(key):
