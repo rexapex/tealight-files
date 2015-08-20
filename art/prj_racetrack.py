@@ -57,7 +57,7 @@ def testCollisions():
     thisCar.y = outerWallHeight
     
   #Inner Wall Collision
-  if boxCollision(thisCar.x, thisCar.y, innerWallX, innerWallY, innerWallWidth, innerWallHeight)
+  if boxCollision(thisCar.x, thisCar.y, innerWallX, innerWallY, innerWallWidth, innerWallHeight):
     print "Collided with centre box"
   
   
