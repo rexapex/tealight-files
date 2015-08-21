@@ -28,8 +28,8 @@ downPressed = False
 rightPressed = False
 leftPressed = False
 
-explosions = [0] * 100
-explosionCount = 1
+explosions = [None] * 100
+explosionCount = 0
 
 #def init():
   #background("track.png")
@@ -93,7 +93,7 @@ def handle_frame():
   car2.draw_car("Bar")
   
   for i in range(0, explosionCount):
-    if explosions[i] != 0:
+    if explosions[i] != None:
       explosions[i].draw()
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
