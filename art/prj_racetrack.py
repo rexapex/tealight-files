@@ -69,6 +69,12 @@ def handle_frame():
     car2.Acceleration += 0.01
     if car2.Acceleration > 0.05:
       car2.Acceleration = 0.05
+  elif sPressed:
+    if car2.Acceleration == 0:
+      if car2.Acceleration < -0.05:
+        car2.Acceleration = -0.05
+      else:
+        car2.Acceleration -= 0.01
   
   car1.update_speed()
   car2.update_speed()
