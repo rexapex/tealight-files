@@ -28,7 +28,7 @@ downPressed = False
 rightPressed = False
 leftPressed = False
 
-explosions = [None] * 100
+explosions = [None] * 256
 explosionCount = 0
 
 #def init():
