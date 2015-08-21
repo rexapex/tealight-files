@@ -212,11 +212,11 @@ def handle_keydown(key):
   elif key == "s":
     sPressed = True
   elif key == "space":
-    explosion[len(explosions)] = explosion()
-    explosion[len(explosions)].set_pos(car1.CoordD["x"], car1.CoordD["y"])
+    explosions[len(explosions)] = explosion()
+    explosions[len(explosions)].set_pos(car1.CoordD["x"], car1.CoordD["y"])
   elif key == "ctrl":
-    explosion[len(explosions)] = explosion()
-    explosion[len(explosions)].set_pos(car2.CoordD["x"], car2.CoordD["y"])
+    explosions[len(explosions)] = explosion()
+    explosions[len(explosions)].set_pos(car2.CoordD["x"], car2.CoordD["y"])
     
 def handle_keyup(key):
   global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
