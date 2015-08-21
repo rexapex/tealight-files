@@ -29,6 +29,7 @@ rightPressed = False
 leftPressed = False
 
 explosions = [0] * 100
+explosionCount = 0
 
 #def init():
   #background("track.png")
@@ -92,7 +93,7 @@ def handle_frame():
   car2.draw_car("Bar")
   
   for i in range(0, len(explosions)):
-    if explosions[i] != 0:
+    ifw explosions[i] != 0:
       explosions[i].draw()
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
@@ -214,11 +215,13 @@ def handle_keydown(key):
   elif key == "s":
     sPressed = True
   elif key == "space":
-    explosions[len(explosions)] = explosion()
-    explosions[len(explosions)].set_pos(car1.CoordD["x"], car1.CoordD["y"])
+    explosions[explosionCount] = explosion()
+    explosionCount += 1
+    explosions[explosionCount].set_pos(car1.CoordD["x"], car1.CoordD["y"])
   elif key == "ctrl":
-    explosions[len(explosions)] = explosion()
-    explosions[len(explosions)].set_pos(car2.CoordD["x"], car2.CoordD["y"])
+    explosions[explosionCount] = explosion()
+    explosionCount += 1
+    explosions[explosionCount].set_pos(car2.CoordD["x"], car2.CoordD["y"])
     
 def handle_keyup(key):
   global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
