@@ -164,6 +164,20 @@ def testCollisions():
 #Returns True if point is inside the circle
 #def circleCollision():
 
+def star(x, y, c, size, spines):
+  
+  color(c)
+  
+  angle = 0
+  
+  for i in range(0, spines):
+    x0 = x + (size * cos(angle))
+    y0 = y + (size * sin(angle))
+    
+    line(x, y, x0, y0)
+    
+    angle = angle + (2 * pi / spines)
+
 def handle_keydown(key):
   global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
   
