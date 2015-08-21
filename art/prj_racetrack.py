@@ -173,7 +173,7 @@ def testCollisions():
    
 
 def handle_keydown(key):
-  global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed, explosions, explosionCount
+  global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed, explosions, explosionCount  
   
   if key == "left":
     leftPressed = True
@@ -193,12 +193,12 @@ def handle_keydown(key):
     sPressed = True
   elif key == "space":
     explosions[explosionCount] = explosion()
-    explosionCount += 1
     explosions[explosionCount].set_pos(car1.CoordD["x"], car1.CoordD["y"])
+    explosionCount += 1
   elif key == "ctrl":
     explosions[explosionCount] = explosion()
-    explosionCount += 1
     explosions[explosionCount].set_pos(car2.CoordD["x"], car2.CoordD["y"])
+    explosionCount += 1
     
 def handle_keyup(key):
   global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
