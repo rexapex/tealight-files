@@ -177,6 +177,16 @@ def star(x, y, c, size, spines):
     line(x, y, x0, y0)
     
     angle = angle + (2 * pi / spines)
+    
+def do_explosion():
+  global explosionTime, explosionX, explosionY
+  
+  if explosionTime > 0:
+    star(explosionX, explosionY, "orange", 50-explosionTime, 50-explosionTime)
+    explosionTime -= 1
+    if explosionTime == 0:
+      star(explosionX, explosionY, "white", 50-explosionTime, 50-explosionTime)   
+
 
 def handle_keydown(key):
   global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
