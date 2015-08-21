@@ -54,7 +54,7 @@ def handle_frame():
     car1.Acceleration += 0.01
     if car1.Acceleration > 0.05:
       car1.Acceleration = 0.05
-  elif aPressed:
+  if aPressed:
     car2.change_orientation(5)
   elif dPressed:
     car2.change_orientation(-5)
