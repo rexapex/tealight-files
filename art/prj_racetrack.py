@@ -18,6 +18,8 @@ innerWallY = 250
 innerWallWidth = screen_width-240
 innerWallHeight = screen_height-500
 
+wPressed = False
+
 #def init():
   #background("track.png")
 
