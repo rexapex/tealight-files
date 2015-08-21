@@ -162,12 +162,16 @@ def handle_keydown(key):
     rightPressed = True
   elif key == "up":
     upPressed = True
+  elif key == "down"
+    downPressed = True
   elif key == "a":
     aPressed = True
   elif key == "d":
     dPressed = True
   elif key == "w":
     wPressed = True
+  elif key == "s"
+    sPressed = True
     
 def handle_keyup(key):
   global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
@@ -178,12 +182,16 @@ def handle_keyup(key):
     rightPressed = False
   elif key == "up":
     upPressed = False
+  elif key == "down"
+    downPressed = False
   elif key == "a":
     aPressed = False
   elif key == "d":
     dPressed = False
   elif key == "w":
     wPressed = False
+  elif key == "s"
+    sPressed = False
 
 #init()
 start()
