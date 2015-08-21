@@ -13,7 +13,6 @@ class explosion:
     self.y = y
     
   def star(self, x, y, c, size, spines):
-
     color(c)
     
     angle = 0
@@ -28,7 +27,7 @@ class explosion:
     
   def draw(self):
     if self.time > 0:
-      star(self.x, self.y, "orange", 50-self.time, 50-self.time)
+      self.star(self.x, self.y, "orange", 50-self.time, 50-self.time)
       self.time -= 1
       return False
     if self.time == 0:
