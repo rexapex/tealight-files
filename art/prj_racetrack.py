@@ -40,7 +40,7 @@ def start():
   car2.change_orientation(1)
 
 def handle_frame():
-  global car1, car2
+  global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
   
   color("white")
   box(0, 0, screen_width, screen_height)
@@ -147,7 +147,7 @@ def testCollisions():
 #def circleCollision():
 
 def handle_keydown(key):
-  global car1, car2
+  global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
   
   if key == "left":
     leftPressed = True
@@ -163,7 +163,7 @@ def handle_keydown(key):
     wPressed = True
     
 def handle_keyup(key):
-  global car1, car2
+  global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
   
   if key == "left":
     leftPressed = False
