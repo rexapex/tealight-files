@@ -193,11 +193,11 @@ def handle_keydown(key):
     sPressed = True
   elif key == "space":
     explosions[explosionCount] = explosion()
-    explosions[explosionCount].set_pos(car1.CoordD["x"], car1.CoordD["y"])
+    explosions[explosionCount].set_pos(car2.CoordD["x"], car2.CoordD["y"])
     explosionCount += 1
   elif key == "ctrl":
     explosions[explosionCount] = explosion()
-    explosions[explosionCount].set_pos(car2.CoordD["x"], car2.CoordD["y"])
+    explosions[explosionCount].set_pos(car1.CoordD["x"], car1.CoordD["y"])
     explosionCount += 1 
     
 def handle_keyup(key):
