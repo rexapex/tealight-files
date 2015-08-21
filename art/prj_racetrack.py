@@ -19,6 +19,13 @@ innerWallWidth = screen_width-240
 innerWallHeight = screen_height-500
 
 wPressed = False
+aPressed = False
+sPressed = False
+dPressed = False
+upPressed = False
+downPressed = False
+rightPressed = False
+leftPressed = False
 
 #def init():
   #background("track.png")
@@ -38,6 +45,23 @@ def handle_frame():
   color("white")
   box(0, 0, screen_width, screen_height)
   color("red")
+  
+  if leftPressed:
+    car1.change_orientation(5)
+  elif rightPressed:
+    car1.change_orientation(-5)
+  elif upPressed:
+    car1.Acceleration += 0.01
+    if car1.Acceleration > 0.05:
+      car1.Acceleration = 0.05
+  elif aPressed:
+    car2.change_orientation(5)
+  elif dPressed:
+    car2.change_orientation(-5)
+  elif wPressed:
+    car2.Acceleration += 0.01
+    if car2.Acceleration > 0.05:
+      car2.Acceleration = 0.05
   
   car1.update_speed()
   car2.update_speed()
@@ -126,21 +150,33 @@ def handle_keydown(key):
   global car1, car2
   
   if key == "left":
-    car1.change_orientation(5)
+    leftPressed = True
   elif key == "right":
-    car1.change_orientation(-5)
+    rightPressed = True
   elif key == "up":
-    car1.Acceleration += 0.01
-    if car1.Acceleration > 0.05:
-      car1.Acceleration = 0.05
+    upPressed = True
   elif key == "a":
-    car2.change_orientation(5)
+    aPressed = True
   elif key == "d":
-    car2.change_orientation(-5)
+    dPressed = True
   elif key == "w":
-    car2.Acceleration += 0.01
-    if car2.Acceleration > 0.05:
-      car2.Acceleration = 0.05
+    wPressed = True
+    
+def handle_keydown(key):
+  global car1, car2
+  
+  if key == "left":
+    leftPressed = False
+  elif key == "right":
+    rightPressed = False
+  elif key == "up":
+    upPressed = False
+  elif key == "a":
+    aPressed = False
+  elif key == "d":
+    dPressed = False
+  elif key == "w":
+    wPressed = False
 
 #init()
 start()
