@@ -47,7 +47,7 @@ def start():
   car2.change_orientation(1)
 
 def handle_frame():
-  global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
+  global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed, explosions, explosionCount
   
   color("white")
   box(0, 0, screen_width, screen_height)
@@ -93,7 +93,7 @@ def handle_frame():
   car2.draw_car("Bar")
   
   for i in range(0, explosionCount):
-    if explosions[i] != None:
+    if explosions[i] != None :
       explosions[i].draw()
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
@@ -173,7 +173,7 @@ def testCollisions():
    
 
 def handle_keydown(key):
-  global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
+  global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed, explosions, explosionCount
   
   if key == "left":
     leftPressed = True
