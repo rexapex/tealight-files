@@ -12,17 +12,8 @@ class explosion:
     self.x = x
     self.y = y
     
-  def draw(self):
-    if self.time > 0:
-      star(self.x, self.y, "orange", 50-self.time, 50-self.time)
-      self.time -= 1
-      return False
-    if self.time == 0:
-      star(self.x, self.y, "white", 50-self.time, 50-self.time)
-      return True
-      
   def star(self, x, y, c, size, spines):
-  
+
     color(c)
     
     angle = 0
@@ -34,3 +25,14 @@ class explosion:
       line(x, y, x0, y0)
       
       angle = angle + (2 * pi / spines)
+    
+  def draw(self):
+    if self.time > 0:
+      star(self.x, self.y, "orange", 50-self.time, 50-self.time)
+      self.time -= 1
+      return False
+    if self.time == 0:
+      star(self.x, self.y, "white", 50-self.time, 50-self.time)
+      return True
+      
+  
