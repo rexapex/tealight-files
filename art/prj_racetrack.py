@@ -29,7 +29,7 @@ rightPressed = False
 leftPressed = False
 
 explosions = [0] * 100
-explosionCount = 0
+explosionCount = 1
 
 #def init():
   #background("track.png")
