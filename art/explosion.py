@@ -35,7 +35,7 @@ class explosion:
       self.time -= 1
       return False
     if self.time == 0:
-      star(self.x, self.y, "white", 50-self.time, 50-self.time)
+      self.star(self.x, self.y, "white", 50-self.time, 50-self.time)
       return True
       
   
