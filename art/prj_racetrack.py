@@ -198,7 +198,7 @@ def handle_keydown(key):
   elif key == "ctrl":
     explosions[explosionCount] = explosion()
     explosions[explosionCount].set_pos(car2.CoordD["x"], car2.CoordD["y"])
-    explosionCount += 1
+    explosionCount += 1 
     
 def handle_keyup(key):
   global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
