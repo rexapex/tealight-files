@@ -27,6 +27,8 @@ downPressed = False
 rightPressed = False
 leftPressed = False
 
+explosions = []
+
 #def init():
   #background("track.png")
 
