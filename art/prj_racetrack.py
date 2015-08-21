@@ -47,17 +47,24 @@ def handle_frame():
   color("red")
   
   if leftPressed:
-    car1.change_orientation(5)
+    car1.change_orientation(4)
   elif rightPressed:
-    car1.change_orientation(-5)
+    car1.change_orientation(-4)
   elif upPressed:
     car1.Acceleration += 0.01
     if car1.Acceleration > 0.05:
       car1.Acceleration = 0.05
+  elif downPressed:
+    if car1.Acceleration == 0
+      if car1.Acceleration < -0.05
+        car1.Acceleration = -0.05
+      else
+        car1.Acceleration -= 0.01
+  
   if aPressed:
-    car2.change_orientation(5)
+    car2.change_orientation(4)
   elif dPressed:
-    car2.change_orientation(-5)
+    car2.change_orientation(-4)
   elif wPressed:
     car2.Acceleration += 0.01
     if car2.Acceleration > 0.05:
