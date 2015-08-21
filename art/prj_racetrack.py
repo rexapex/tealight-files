@@ -92,8 +92,8 @@ def handle_frame():
   car1.draw_car("Foo")
   car2.draw_car("Bar")
   
-  for i in range(0, len(explosions)):
-    ifw explosions[i] != 0:
+  for i in range(0, explosionCount):
+    if explosions[i] != 0:
       explosions[i].draw()
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
