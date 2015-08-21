@@ -8,7 +8,7 @@ class explosion:
     self.x = 0
     self.y = 0
   
-  def set_pos(self, x, y)
+  def set_pos(self, x, y):
     self.x = x
     self.y = y
     
