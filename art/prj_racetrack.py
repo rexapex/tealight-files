@@ -118,7 +118,7 @@ def testCollisions():
     car1.CoordD["y"] = outerWallHeight
     car1.Acceleration = 0
    # car1.Speed = -car1.Speed
-    car1.change_orientation(-car1.TotalOrientation*2)
+    car1.change_orientation(-car1.TotalOrientation)
     
     
     
@@ -126,22 +126,22 @@ def testCollisions():
     car2.CoordD["x"] = outerWallX
     car2.Acceleration = 0
     #car1.Speed = -car1.Speed
-    car2.change_orientation(180)
+    car2.change_orientation(-car2.TotalOrientation*2)
   elif car2.CoordD["x"] >= outerWallWidth:
     car2.CoordD["x"] = outerWallWidth
     car2.Acceleration = 0
    # car1.Speed = -car1.Speed
-    car2.change_orientation(180)
+    car2.change_orientation(-car2.TotalOrientation*2)
   if car2.CoordD["y"] <= outerWallY:
     car2.CoordD["y"] = outerWallY
     car2.Acceleration = 0
    # car1.Speed = -car1.Speed
-    car2.change_orientation(180)
+    car2.change_orientation(-car1.TotalOrientation)
   elif car2.CoordD["y"] >= outerWallHeight:
     car2.CoordD["y"] = outerWallHeight
     car2.Acceleration = 0
    # car1.Speed = -car1.Speed
-    car2.change_orientation(180)
+    car2.change_orientation(-car1.TotalOrientation)
     
   #Inner Wall Collision
   #if boxCollision(thisCar.x, thisCar.y, innerWallX, innerWallY, innerWallWidth, innerWallHeight):
