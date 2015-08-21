@@ -92,7 +92,7 @@ def handle_frame():
   car2.draw_car("Bar")
   
   for i in range(0, len(explosions)):
-    explosion.draw()
+    explosions[i].draw()
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
  #   otherCars[i].draw()
