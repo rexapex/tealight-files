@@ -28,8 +28,8 @@ downPressed = False
 rightPressed = False
 leftPressed = False
 
-#explosions = [None] * 100
-#explosionCount = 0
+explosions = [None] * 100
+explosionCount = 0
 
 #def init():
   #background("track.png")
