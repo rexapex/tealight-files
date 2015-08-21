@@ -113,7 +113,7 @@ def testCollisions():
     car1.CoordD["y"] = outerWallY
     car1.Acceleration = 0
    # car1.Speed = -car1.Speed
-    car1.change_orientation(360-car1.TotalOrientation)
+    car1.change_orientation(car1.TotalOrientation)
   elif car1.CoordD["y"] >= outerWallHeight:
     car1.CoordD["y"] = outerWallHeight
     car1.Acceleration = 0
