@@ -170,7 +170,7 @@ def testCollisions():
   
 #Returns True if point is inside the circle
 #def circleCollision():
-
+   
 
 def handle_keydown(key):
   global car1, car2, leftPressed, rightPressed, upPressed, downPressed, aPressed, sPressed, dPressed, wPressed
