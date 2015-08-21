@@ -84,8 +84,8 @@ def handle_frame():
   
   testCollisions()
   
-  car1.draw_car()
-  car2.draw_car()
+  car1.draw_car("Foo")
+  car2.draw_car("Bar")
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
  #   otherCars[i].draw()
