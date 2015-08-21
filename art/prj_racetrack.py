@@ -162,7 +162,7 @@ def handle_keydown(key):
     rightPressed = True
   elif key == "up":
     upPressed = True
-  elif key == "down"
+  elif key == "down":
     downPressed = True
   elif key == "a":
     aPressed = True
@@ -170,7 +170,7 @@ def handle_keydown(key):
     dPressed = True
   elif key == "w":
     wPressed = True
-  elif key == "s"
+  elif key == "s":
     sPressed = True
     
 def handle_keyup(key):
@@ -182,7 +182,7 @@ def handle_keyup(key):
     rightPressed = False
   elif key == "up":
     upPressed = False
-  elif key == "down"
+  elif key == "down":
     downPressed = False
   elif key == "a":
     aPressed = False
@@ -190,7 +190,7 @@ def handle_keyup(key):
     dPressed = False
   elif key == "w":
     wPressed = False
-  elif key == "s"
+  elif key == "s":
     sPressed = False
 
 #init()
