@@ -80,6 +80,7 @@ def handle_frame():
         car2.Acceleration = -0.05
       else:
         car2.Acceleration -= 0.01
+        
   
   car1.update_speed()
   car2.update_speed()
@@ -88,6 +89,9 @@ def handle_frame():
   
   car1.draw_car("Foo")
   car2.draw_car("Bar")
+  
+  for i in range(0, len(explosions)):
+    explosion.draw()
   
  # for i in range (0, len(otherCars)):  #Draw connected players cars
  #   otherCars[i].draw()
