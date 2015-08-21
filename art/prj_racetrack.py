@@ -5,6 +5,7 @@ from tealight.art import screen_width, screen_height
 from math import sin, cos, pi, sqrt
 
 from github.Krimzar.art.racecar import car
+from github.rexapex.art.explosion import explosion
 
 car1 = None      #The player using this computer
 car2 = None
