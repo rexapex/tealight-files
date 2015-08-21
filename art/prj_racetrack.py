@@ -162,7 +162,7 @@ def handle_keydown(key):
   elif key == "w":
     wPressed = True
     
-def handle_keydown(key):
+def handle_keyup(key):
   global car1, car2
   
   if key == "left":
